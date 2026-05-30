@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CYBORG | The Future is Now</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- ===== LOADER ===== -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-logo" data-text="CYB">CYB</div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar"><div class="loader-fill"></div></div>
+      </div>
+      <div class="loader-status">Initializing neural link&hellip;</div>
+    </div>
+  </div>
+
+  <!-- ===== SCANLINES OVERLAY ===== -->
+  <div class="scanlines"></div>
+
+  <!-- ===== CUSTOM CURSOR ===== -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="nav-brand" data-text="CYBORG">CYBORG</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">Origins</a>
+      <a href="#capabilities">Modules</a>
+      <a href="#specs">Specs</a>
+      <a href="#cta">Enlist</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-pre">[ SYSTEM ONLINE &mdash; BUILD 2087.6.1 ]</p>
+      <h1 class="glitch" data-text="CYBORG">CYBORG</h1>
+      <p class="hero-tagline"><span id="typewriter"></span><span class="blink">|</span></p>
+      <div class="hero-buttons">
+        <a href="#about" class="btn btn-primary"><span>EXPLORE</span></a>
+        <a href="#capabilities" class="btn btn-outline">VIEW MODULES</a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="mouse"><div class="wheel"></div></div>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-head">
+        <span class="tag">// ORIGINS</span>
+        <h2>THE <span class="highlight">EVOLUTION</span></h2>
+        <div class="head-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>In the year <strong>2087</strong>, the boundary between human and machine dissolved forever. We are the architects of a new species&nbsp;&mdash; enhanced, evolved, unstoppable.</p>
+          <p>Our neural interfaces bridge organic thought and digital precision, forging beings of unprecedented capability. Flesh fused with titanium. Thought amplified by quantum cores.</p>
+          <div class="about-counters">
+            <div class="counter-item">
+              <span class="counter" data-target="99.7">0</span><span class="unit">%</span>
+              <span class="counter-label">Neural Sync</span>
+            </div>
+            <div class="counter-item">
+              <span class="counter" data-target="2087">0</span>
+              <span class="counter-label">Year Founded</span>
+            </div>
+            <div class="counter-item">
+              <span class="counter" data-target="50">0</span><span class="unit">K+</span>
+              <span class="counter-label">Enhanced Beings</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual reveal">
+          <div class="cyber-eye">
+            <div class="eye-outer">
+              <div class="eye-mid">
+                <div class="eye-inner"></div>
+              </div>
+            </div>
+            <div class="eye-ring ring-1"></div>
+            <div class="eye-ring ring-2"></div>
+            <div class="eye-ring ring-3"></div>
+            <div class="eye-scan"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CAPABILITIES ===== -->
+  <section id="capabilities" class="capabilities">
+    <div class="container">
+      <div class="section-head">
+        <span class="tag">// SYSTEM MODULES</span>
+        <h2>CORE <span class="highlight">CAPABILITIES</span></h2>
+        <div class="head-line"></div>
+      </div>
+
+      <div class="cap-grid">
+        <!-- Card 1 -->
+        <div class="cap-card reveal">
+          <div class="card-num">01</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <ellipse cx="32" cy="32" rx="28" ry="16"/>
+              <circle cx="32" cy="32" r="8"/>
+              <circle cx="32" cy="32" r="3"/>
+            </svg>
+          </div>
+          <h3>Enhanced Vision</h3>
+          <p>360° threat detection with infrared, ultraviolet, and quantum-spectrum analysis. See beyond the visible.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="cap-card reveal">
+          <div class="card-num">02</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M32 8c-10 0-18 8-18 18s8 18 18 18 18-8 18-18S42 8 32 8z"/>
+              <path d="M22 28c2-4 6-6 10-6s8 2 10 6"/>
+              <path d="M26 20c1-2 3-3 6-3s5 1 6 3"/>
+              <line x1="32" y1="44" x2="32" y2="56"/>
+              <line x1="24" y1="48" x2="32" y2="56"/>
+              <line x1="40" y1="48" x2="32" y2="56"/>
+            </svg>
+          </div>
+          <h3>Neural Interface</h3>
+          <p>Direct brain-to-network uplink with 12ms latency. Access the global datastream with pure thought.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="cap-card reveal">
+          <div class="card-num">03</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="12" y="20" width="40" height="24" rx="4"/>
+              <rect x="20" y="28" width="8" height="8"/>
+              <rect x="36" y="28" width="8" height="8"/>
+              <line x1="32" y1="12" x2="32" y2="20"/>
+              <line x1="20" y1="12" x2="44" y2="12"/>
+              <line x1="32" y1="44" x2="32" y2="52"/>
+              <line x1="20" y1="52" x2="44" y2="52"/>
+            </svg>
+          </div>
+          <h3>Quantum Core</h3>
+          <p>Onboard quantum processor delivering 10<sup>18</sup> operations per second. Think faster than light.</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="cap-card reveal">
+          <div class="card-num">04</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 12L20 52"/>
+              <path d="M44 12L44 52"/>
+              <path d="M20 20C28 28 36 16 44 24"/>
+              <path d="M20 32C28 40 36 28 44 36"/>
+              <path d="M20 44C28 52 36 40 44 48"/>
+            </svg>
+          </div>
+          <h3>Nano Regen</h3>
+          <p>Self-repairing nanobots heal structural damage in real time. Tissue, bone, alloy — all restored.</p>
+        </div>
+        <!-- Card 5 -->
+        <div class="cap-card reveal">
+          <div class="card-num">05</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M32 6L52 18V38L32 50L12 38V18Z"/>
+              <path d="M32 16L42 22V34L32 40L22 34V22Z"/>
+              <line x1="32" y1="6" x2="32" y2="16"/>
+              <line x1="52" y1="18" x2="42" y2="22"/>
+              <line x1="52" y1="38" x2="42" y2="34"/>
+              <line x1="32" y1="50" x2="32" y2="40"/>
+              <line x1="12" y1="38" x2="22" y2="34"/>
+              <line x1="12" y1="18" x2="22" y2="22"/>
+            </svg>
+          </div>
+          <h3>Adaptive Armor</h3>
+          <p>Reactive exoskeleton adjusts density on impact. Withstand ballistic, thermal, and EMP threats.</p>
+        </div>
+        <!-- Card 6 -->
+        <div class="cap-card reveal">
+          <div class="card-num">06</div>
+          <div class="card-icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="32" cy="20" r="6"/>
+              <line x1="32" y1="26" x2="32" y2="44"/>
+              <line x1="20" y1="32" x2="44" y2="32"/>
+              <line x1="24" y1="44" x2="40" y2="44"/>
+              <path d="M24 44L20 56"/>
+              <path d="M40 44L44 56"/>
+              <circle cx="32" cy="20" r="14" stroke-dasharray="4 4"/>
+            </svg>
+          </div>
+          <h3>Bionic Strength</h3>
+          <p>Hydraulic musculature amplifies force 200×. Lift, crush, and endure beyond organic limits.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SPECS ===== -->
+  <section id="specs" class="specs">
+    <div class="container">
+      <div class="section-head">
+        <span class="tag">// DIAGNOSTICS</span>
+        <h2>TECH <span class="highlight">SPECS</span></h2>
+        <div class="head-line"></div>
+      </div>
+
+      <div class="specs-grid">
+        <div class="spec-bar reveal" data-percent="99">
+          <div class="spec-info"><span>Processing Power</span><span class="spec-val">99%</span></div>
+          <div class="bar-track"><div class="bar-fill"></div></div>
+        </div>
+        <div class="spec-bar reveal" data-percent="95">
+          <div class="spec-info"><span>Neural Bandwidth</span><span class="spec-val">95%</span></div>
+          <div class="bar-track"><div class="bar-fill"></div></div>
+        </div>
+        <div class="spec-bar reveal" data-percent="98">
+          <div class="spec-info"><span>Combat Efficiency</span><span class="spec-val">98%</span></div>
+          <div class="bar-track"><div class="bar-fill"></div></div>
+        </div>
+        <div class="spec-bar reveal" data-percent="87">
+          <div class="spec-info"><span>Energy Output</span><span class="spec-val">87%</span></div>
+          <div class="bar-track"><div class="bar-fill"></div></div>
+        </div>
+        <div class="spec-bar reveal" data-percent="92">
+          <div class="spec-info"><span>Stealth Rating</span><span class="spec-val">92%</span></div>
+          <div class="bar-track"><div class="bar-fill"></div></div>
+        </div>
+        <div class="spec-bar reveal" data-percent="96">
+          <div class="spec-info"><span>Regeneration Speed</span><span class="spec-val">96%</span></div>
+          <div class="bar-track"><div class="bar-fill"></div></div>
+        </div>
+      </div>
+
+      <div class="specs-visual">
+        <div class="hex-grid">
+          <div class="hex reveal"><span>ARM</span></div>
+          <div class="hex reveal"><span>CORE</span></div>
+          <div class="hex reveal"><span>OPTIC</span></div>
+          <div class="hex reveal"><span>NEURO</span></div>
+          <div class="hex reveal"><span>NANO</span></div>
+          <div class="hex reveal"><span>SHELL</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section id="cta" class="cta-section">
+    <div class="container">
+      <div class="cta-box reveal">
+        <span class="tag">// RECRUITMENT OPEN</span>
+        <h2>READY TO <span class="highlight">EVOLVE</span>?</h2>
+        <p>Join the next phase of human evolution. Leave your coordinates and we will initiate contact.</p>
+        <form class="cta-form" id="ctaForm">
+          <div class="form-row">
+            <input type="text" placeholder="Designation (Name)" required />
+            <input type="email" placeholder="Comm-Link (Email)" required />
+          </div>
+          <button type="submit" class="btn btn-primary"><span>INITIATE CONTACT</span></button>
+        </form>
+        <div class="cta-success" id="ctaSuccess">
+          <span>&#10003; SIGNAL RECEIVED &mdash; STAND BY FOR UPLINK</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand" data-text="CYBORG">CYBORG</div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">Origins</a>
+        <a href="#capabilities">Modules</a>
+        <a href="#specs">Specs</a>
+      </div>
+      <p class="footer-copy">&copy; 2087 CYBORG INITIATIVE. ALL SYSTEMS NOMINAL.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
